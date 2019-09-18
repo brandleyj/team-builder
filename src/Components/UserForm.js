@@ -15,31 +15,36 @@ const UserForm = props => {
 
 	return (
 		<form onSubmit={submitForm}>
-			<label htmlFor="Name">Name</label>
 			<input
+				className="form-control"
 				id="name"
 				type="text"
 				name="name"
+				placeholder="Name"
 				onChange={handleChanges}
 				value={form.name}
 			/>
-			<label htmlFor="email">Email</label>
 			<input
+				className="form-control"
 				id="email"
 				type="text"
 				name="email"
+				placeholder="Email"
 				onChange={handleChanges}
 				value={form.email}
 			/>
-			<label htmlFor="role">Role</label>
 			<input
+				className="form-control"
 				id="role"
 				type="text"
 				name="role"
+				placeholder="Role"
 				onChange={handleChanges}
 				value={form.role}
 			/>
-			<button type="submit">Add Note</button>
+			<button class="btn btn-secondary" type="submit">
+				Add Note
+			</button>
 		</form>
 	);
 };
